@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+html{
+    height: 100%;
+
+}
+body{
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%,rgb(3,41,6) 80%);
+}
+.login-box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    padding: 40px;
+    transform: translate(-50%,-50%);
+    background-color: rgba(0,0,0,0.5);
+
+
+    border: 10px;
+    border-radius: 2em;
+    border: 1px solid #03f437;
+    box-shadow: 0 0 5px #03f437,
+                0 0 25px #03f437,
+                0 0 50px #03f437;
+    transition: .5s ease;            
+
+}
+
+.login-box h2{
+    margin: 0 0 30px;
+    padding: 0;
+    color: white;
+    text-align: center;
+}
+
+.login-box .user-box{
+    position: relative;
+}
+.login-box .user-box input{
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: white;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    background-color: transparent;
+}
+.login-box .user-box label{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: white;
+    pointer-events: none;
+    transition: .5s ease;
+
+}
+
+.login-box .user-box input:focus ~ label,
+.login-box .user-box input:valid ~ label{
+    top: -20px;
+    left: 0;
+    color: #03f437;
+    font-size: 12px;
+}
+
+.login-box form a{
+    margin: 0 auto;
+    position: relative;
+    display: inline-block;
+    padding: 10px 120px;
+    color: #03f437;
+    font-size: 16px;
+    border-radius: 25px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 50px;
+    letter-spacing: 4px;
+}
+
+.login-box a:hover{
+    background-color: #03f437;
+    color: white;
+    border: 5px;
+
+    box-shadow: 0 0 5px #03f437,
+                0 0 25px #03f437,
+                0 0 50px #03f437,
+                0 0 100px #03f437,
+}
+
+.login-box a span{
+    position: absolute;
+    display: block;
+}
+
+.remember{
+    color: white;
+}
